@@ -80,14 +80,14 @@ squere1.addEventListener("mousemove", () =>{
 
 
  let index = 0;
-    let timeout1 : number | null = null;
+    let timeout1 : NodeJS.Timeout | null = null;
     const counter1 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 squere5.addEventListener("mousemove", () =>{
     function changeText() {
         squere5.textContent = counter1[index];
         index++;
     if (index < counter1.length){
-        timeout1 = setTimeout(changeText, 1000);
+        timeout1 = setTimeout(changeText,2000);
     }}
     changeText();
 })
