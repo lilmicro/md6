@@ -32,10 +32,14 @@ button3.addEventListener("click",() =>{
 const button4 = document.querySelector(".button4") as HTMLElement;
 const squere4 = document.querySelector(".squere4") as HTMLElement;
 button4.addEventListener("click",() =>{
-    if (squere4.style.opacity === "100%") {
-         squere4.style.opacity = "0%";
-    } else  if (squere4.style.opacity === "0%"){
-         squere4.style.opacity = "100%";
+
+console.log(squere4.style.opacity)
+console.log(squere4.style)
+
+    if (squere4.style.opacity === "1") {
+         squere4.style.opacity = "0";
+    } else  if (squere4.style.opacity === "0"){
+         squere4.style.opacity = "1";
     }
 } );
 
